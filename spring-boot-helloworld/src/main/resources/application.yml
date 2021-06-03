@@ -1,3 +1,23 @@
 mayikt:
   name: mayikt
   age: 22
+
+spring:
+  http:
+    encoding:
+      force: true
+      ### 模版引擎编码为UTF-8
+      charset: UTF-8
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    ## 模版文件结尾.ftl
+    suffix: .ftl
+    ## 模版文件目录
+    template-loader-path: classpath:/templates
