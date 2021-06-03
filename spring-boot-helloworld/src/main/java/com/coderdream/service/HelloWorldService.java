@@ -2,6 +2,7 @@ package com.coderdream.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @version: $
  */
 //@RestController
-@Controller // 转发页面 
+@Controller // 转发页面
 @EnableAutoConfiguration
+@ComponentScan(basePackages = "com.coderdream.service") // 控制器扫包范围
 public class HelloWorldService {
 
     /**
