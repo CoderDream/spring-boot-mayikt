@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MemberService {
 
-@Value("${mayikt.name}")
-private String name;
+    @Value("${mayikt.name}")
+    private String name;
 
-@Value("${mayikt.age}")
-private String age;
+    @Value("${mayikt.age}")
+    private String age;
 
-@RequestMapping("/getProperties")
-public String getProperties(){
-    return name + "--" + age;
-}
+    @RequestMapping("/getProperties")
+    public String getProperties(){
+        return name + "--" + age;
+    }
 
     @RequestMapping("/getMember")
     public String getMember(){
