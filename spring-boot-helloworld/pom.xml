@@ -23,7 +23,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <!-- 已包含Spring SpringMVC -->
         </dependency>
-    </dependencies>
 
+        <!-- 引入freeMarker的依赖包. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
