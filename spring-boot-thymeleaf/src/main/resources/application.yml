@@ -1,0 +1,12 @@
+###ThymeLeaf配置
+spring:
+  thymeleaf:
+    #prefix：指定模板所在的目录
+    prefix: classpath:/templates/
+    #check-tempate-location: 检查模板路径是否存在
+    check-template-location: true
+    #cache: 是否缓存，开发模式下设置为false，避免改了模板还要重启服务器，线上设置为true，可以提高性能。
+    cache: true
+    suffix:  .html
+    encoding: UTF-8
+    mode: HTML5
