@@ -1,4 +1,4 @@
-package com.coderdream.service;
+package com.coderdream.day01;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

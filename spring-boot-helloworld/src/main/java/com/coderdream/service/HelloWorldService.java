@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @modified By：
  * @version: $
  */
-//@RestController
-@Controller // 转发页面
-@EnableAutoConfiguration
-@ComponentScan(basePackages = "com.coderdream.service") // 控制器扫包范围
+@RestController
+//@Controller // 转发页面
 public class HelloWorldService {
 
     /**
@@ -31,12 +29,4 @@ public class HelloWorldService {
     }
 
 
-    public static void main(String[] args) {
-        /**
-         * 启动类入口class，默认整合Tomcat，容器端口8080
-         */
-        SpringApplication.run(HelloWorldService.class, args);
-
-
-    }
 }
