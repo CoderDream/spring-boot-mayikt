@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--需要在HTML文件中加入以下语句： -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show User</title>
+</head>
+<body>
+<table>
+    用户:<span th:text="${user}"></span>
+    姓名:<span th:text="${user.userName}"></span>
+    年龄:<span th:text="${user.age}"></span>
+    <ul th:each="user:${userList}">
+        <li th:text="${user.userName}"></li>
+        <li th:text="${user.age}"></li>
+    </ul>
+    <span th:if="${user.age>17}">已经成年啦</span>
+    <span th:if="${user.age<17}">未成年啦</span>
+</table>
+</body>
+</html>

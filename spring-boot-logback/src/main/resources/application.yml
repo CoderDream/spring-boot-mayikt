@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: test
+
+server.:
+  port: 8081 # 端口号
+  servlet:
+    context-path: /mayikt # 设置 springboot 项目访问路径
+
+
+###指定读取logback配置文件
+logging:
+  config: classpath:log/logback.xml
