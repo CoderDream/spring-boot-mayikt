@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mayikt_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mayikt:
+  address: dev.mayikt.com
+  age:  ${random.int[20,40]} #22 项目启动时生成一次，访问时不会再变化
+  name: mayikt
